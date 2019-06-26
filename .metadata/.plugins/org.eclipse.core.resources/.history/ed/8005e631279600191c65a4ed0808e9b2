@@ -1,0 +1,49 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<%request.setCharacterEncoding("utf-8"); %>	
+
+<%	
+	String id = request.getParameter("id");// 입력할 데이터 가져오기
+	String pwd = request.getParameter("pwd");
+	String name = request.getParameter("name");
+	String num1 = request.getParameter("num1");
+	String num2 = request.getParameter("num2");
+	String email = request.getParameter("email");
+	String phone = request.getParameter("phone");
+	String zipcode = request.getParameter("zipcode");
+	String address = request.getParameter("address");
+	String job = request.getParameter("job");
+	
+
+
+	System.out.println("id : " + id);
+	System.out.println("pwd : " + pwd);//제대로 가져왔는지 확인상 한번 찍어주는 것.
+	System.out.println("name : " + name);
+	System.out.println("num1 : "+ num1);
+	System.out.println("num2 : "+ num2);
+	System.out.println("email : " + email);
+	System.out.println("phone : "+ phone);
+	System.out.println("zipcode : "+ zipcode);
+	System.out.println("address : "+ address);
+	System.out.println("job : "+ job);
+
+
+
+
+
+
+
+
+<h2>회원가입이 완료되었습니다.</h2>
+<input type=button value="로긴하기" onClick="javascript:location.href='login_2312.jsp'">
+</center>
+</body>
+</html>

@@ -1,0 +1,11 @@
+127.0.0.1 - - [13/May/2019:10:36:23 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [13/May/2019:10:36:26 +0900] "GET /BasicJSP/05_ac/includedTest.jsp HTTP/1.1" 200 227
+0:0:0:0:0:0:0:1 - - [13/May/2019:10:37:03 +0900] "GET /BasicJSP/05_ac/includeTestForm.jsp HTTP/1.1" 200 391
+0:0:0:0:0:0:0:1 - - [13/May/2019:10:37:07 +0900] "POST /BasicJSP/05_ac/includeTest.jsp HTTP/1.1" 200 510
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:11:17 +0900] "GET /BasicJSP/05_ac/layout.jsp HTTP/1.1" 500 2757
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:18:53 +0900] "GET /BasicJSP/05_ac/layout.jsp HTTP/1.1" 200 929
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:38:45 +0900] "GET /BasicJSP/05_ac/forwardTestForm.jsp HTTP/1.1" 200 519
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:38:59 +0900] "POST /BasicJSP/05_ac/forwardTest.jsp HTTP/1.1" 200 261
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:46:49 +0900] "GET /BasicJSP/05_ac/forwardTestForm.jsp HTTP/1.1" 200 519
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:47:35 +0900] "POST /BasicJSP/05_ac/forwardTest.jsp HTTP/1.1" 200 261
+0:0:0:0:0:0:0:1 - - [13/May/2019:11:54:20 +0900] "GET /BasicJSP/05_ac/forwarTest2.jsp HTTP/1.1" 200 261

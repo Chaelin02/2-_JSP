@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+     <%@page import="java.sql.*" %>
+<!DOCTYPE html>
+<html>
+<head>
+<% 
+	String id = request.getParameter("id");
+	String pwd = request.getParameter("pwd");
+	String name = request.getParameter("name");
+	
+	
+	Connection conn = null;   
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+		
+	String str = "";
+	try {
+		String jdbcUrl = "jdbc:mysql://localhost:3306/mydb";
+		String dbId = "root";
+		String dbPwd = "mirim2";
+		
+		
+		Class.forName("org.gjt.mm.mysql.Driver");				
+		conn = DriverManager.getConnection(jdbcUrl, dbId, dbPwd);
+		String sql = "select id , pwd from tblregister where id =?"; 
+		
+		pstmt = conn.prepareStatement(sql);  
+		pstmt.setString(1, id);
+		rs = pstmt.executeQuery(); 
+
+		
+		if(rs.next()){  
+			String rId = rs.getString("id");
+			String rPwd = rs.getString("pwd");
+			
+			System.out.println("rId : "+rId);
+			System.out.println("rPwd : "+rPwd);
+			System.out.println(id);
+			System.out.println(pwd);
+			System.out.println(name);
+			
+			
+			if(id.equals(rId) && pwd.equals(rPwd)) {
+				sql = "update tblregister set name = ? where id = ?";
+				pstmt = conn.prepareStatement(sql);
+				pstmt.setString(1,name);
+				pstmt.setString(2,id);
+				pstmt.executeUpdate();
+	%>
+	수정 완료입니다. 
+	 finally {
+			if(rs != null)
+			try {rs.close();} catch(SQLException sqle) {}
+		if(pstmt != null)
+			try {pstmt.close();} catch(SQLException sqle) {}
+		if(conn != null) 
+			try {conn.close();} catch(SQLException sqle) {}
+			
+	}
+	
+	
+	%>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%request.setCharacterEncoding("utf-8"); %>	
+수정완료입니다. 
+</body>
+</html>

@@ -1,0 +1,7 @@
+127.0.0.1 - - [14/Jun/2019:11:24:13 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:24:19 +0900] "GET /BasicJSP/jdbc07/useJDBC.jsp HTTP/1.1" 200 1151
+127.0.0.1 - - [14/Jun/2019:11:57:46 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:57:48 +0900] "GET /BasicJSP/jdbc07/useJDBC.jsp HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:11:59:36 +0900] "GET /BasicJSP/jdbc07/useJDBC.jsp HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:12:00:15 +0900] "GET /BasicJSP/jdbc07/useJDBC.jsp HTTP/1.1" 200 841
+0:0:0:0:0:0:0:1 - - [14/Jun/2019:12:09:09 +0900] "GET /BasicJSP/jdbc07/useJDBC.jsp HTTP/1.1" 200 1022

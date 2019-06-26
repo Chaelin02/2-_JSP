@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;ifTestForm.jsp&apos; to &apos;03_IF&apos;" description="Move &apos;ifTestForm.jsp&apos; to &apos;03_IF&apos;" destination="WebContent/03_IF" element1="WebContent/02_SC/ifTestForm.jsp" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1554086795011" updateReferences="true"/>
+</session>

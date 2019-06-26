@@ -1,0 +1,44 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<%request.setCharacterEncoding("utf-8"); %>	
+<% 
+	String id = request.getParameter("id");
+	String password = request.getParameter("password");
+	String name = request.getParameter("name");
+	
+	
+	Connection conn = null;   
+	PreparedStatement pstmt = null;
+	ResultSet rs = null;
+		
+	String str = "";
+	try {
+		String jdbcUrl = "jdbc:mysql://localhost:3306/mydb";
+		String dbId = "root";
+		String dbPwd = "mirim2";
+		
+		
+		Class.forName("org.gjt.mm.mysql.Driver");			
+		
+		conn = DriverManager.getConnection(jdbcUrl, dbId, dbPwd);//	한번썻으면 변하지 않음
+
+		String sql = "insert into tblRegister(id, pwd, name, num1, num2, email, phone, zipcode, address, job) values (?, ?, ?, ?, ?,?,?,?,?)";
+	
+		pstmt = conn.prepareStatement(sql);
+		
+		pstmt.setString(1, id);
+	
+	}
+	
+	
+	%>
+
+</body>
+</html>

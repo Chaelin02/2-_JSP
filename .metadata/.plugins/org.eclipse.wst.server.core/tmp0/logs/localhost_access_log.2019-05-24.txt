@@ -1,0 +1,9 @@
+127.0.0.1 - - [24/May/2019:10:35:39 +0900] "GET / HTTP/1.1" 404 1074
+0:0:0:0:0:0:0:1 - - [24/May/2019:10:35:42 +0900] "GET /BasicJSP/WEB-INF/classes/b06/bean/SimpleBean.java HTTP/1.1" 404 185
+0:0:0:0:0:0:0:1 - - [24/May/2019:10:35:54 +0900] "GET /BasicJSP/b06/bean/SimpleBean.jsp HTTP/1.1" 200 214
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:25:43 +0900] "GET /BasicJSP/b06/bean/beanTestForm.jsp HTTP/1.1" 200 274
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:25:46 +0900] "POST /BasicJSP/b06/bean/beanTestPro.jsp HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:25:53 +0900] "GET /BasicJSP/b06/bean/beanTestPro.jsp HTTP/1.1" 404 -
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:37:43 +0900] "GET /BasicJSP/b06/bean/favoriteForm.jsp HTTP/1.1" 200 430
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:58:13 +0900] "GET /BasicJSP/b06/bean/favoriteForm.jsp HTTP/1.1" 200 465
+0:0:0:0:0:0:0:1 - - [24/May/2019:11:58:27 +0900] "POST /BasicJSP/b06/bean/myfavoritePro.jsp HTTP/1.1" 404 185
